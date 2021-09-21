@@ -1,20 +1,33 @@
-git <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 
 <head>
-    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
     <title>Etch-A-Sketch</title>
 </head>
 
 <body>
-    <div id="initial-container">
-    <h1>Etch A Sketch</h1>
-    <button>Reset</button>
-    </div>
-    <div id="container">
+    <header>
+        <h1>Etch-A-Sketch</h1>
+    </header>
+
+    <div id="content">
+        <div class="input-section">
+            <div class="input-header">
+                <h2>Create A New Grid</h2>
+            </div>
+            <label>
+                Choose New Grid Dimensions (X by X):
+                <input class="number" type="select" value="16">
+            </label>
+            <button class="create">Create Grid</button>
+            <button class="reset">Reset Grid</button>
+        </div>
+        <div id="container">
+        </div>
 
     </div>
-    <script src = script.js></script>
+    <script src=script.js></script>
 </body>
 
 </html>
