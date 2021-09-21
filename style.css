@@ -1,33 +1,21 @@
 body {
-    height: 100%;
-    background: beige;
+    margin: 0 auto;
+    background: grey;
 }
 h1 {
     display: flex;
-    align-self: center;
+    text-align: center;
     color: black;
 }
-#container {
-    display: grid;
-    grid-template-columns: repeat(16, 60px);
-    
-    margin: auto;
-    width: 960px;
-    height: 960px;
-    border: 2px solid red;
-}
+h2 {
+    text-align: center;
 
-.square {
-    background-color: grey;
-    border: 1px black solid; 
 }
-.hover {
-    background-color: red;
+label {
+
 }
-#initial-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+input {
+
 }
 button {
     display: flex;
@@ -35,7 +23,6 @@ button {
     align-items: center;
     justify-content: center;
     justify-self: center;
-    
     color: white;
     background: rgb(0, 162, 255);
     padding: 0;
@@ -43,4 +30,26 @@ button {
     border: 3px solid black;
     height: 50px;
     width: 100px;
+}
+button:hover {
+
+}
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.square {
+    background-color: grey;
+    border: 1px black solid; 
+}
+.hover {
+    background-color: red;
+}
+#container {
+    display: grid;
+    margin: auto;
+    width: 960px;
+    height: 960px;
+    border: 2px solid black;
 }
