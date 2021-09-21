@@ -1,0 +1,46 @@
+body {
+    height: 100%;
+    background: beige;
+}
+h1 {
+    display: flex;
+    align-self: center;
+    color: black;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(16, 60px);
+    
+    margin: auto;
+    width: 960px;
+    height: 960px;
+    border: 2px solid red;
+}
+
+.square {
+    background-color: grey;
+    border: 1px black solid; 
+}
+.hover {
+    background-color: red;
+}
+#initial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+button {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+    
+    color: white;
+    background: rgb(0, 162, 255);
+    padding: 0;
+    border-radius: 7px;
+    border: 3px solid black;
+    height: 50px;
+    width: 100px;
+}
