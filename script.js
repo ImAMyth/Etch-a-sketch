@@ -6,12 +6,17 @@ let color = changeColor()
 
 
 function createGrid() {
+
+    if (input.value <= 100) {
+        columnsAndRows = input.value
+      }
+    
     if (container.firstElementChild) {
         while (container.firstElementChild) {
             container.removeChild(container.firstElementChild)
         }
     }
-    columnsAndRows = input.value
+    
     container.style.gridTemplateColumns = `repeat(${columnsAndRows}, 1fr)`
     container.style.gridTemplateRows = `repeat(${columnsAndRows})`
     container.style.gridGap = "1px"
