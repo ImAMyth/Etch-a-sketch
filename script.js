@@ -4,8 +4,6 @@ let resetButton = document.querySelector(".reset")
 let input = document.querySelector("input")
 let color = changeColor()
 
-window.onload = createGrid
-
 
 function createGrid() {
     if (container.firstElementChild) {
@@ -27,6 +25,7 @@ function createGrid() {
     }
 
 }
+createGrid()
 
 function resetGrid() {
     let squares = document.querySelectorAll(".square")
